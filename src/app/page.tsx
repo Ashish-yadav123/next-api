@@ -9,23 +9,11 @@ async function getData() {
 
   return res.json();
 }
-// import { useEffect } from "react";
 import ApiApp from "../../component/apiApp";
 
 export default async function Home() {
   const data = await getData();
   console.log(data.data.title, "data");
-  // const fetchHandler = async () => {
-  //   console.log("Api workin");
-  //   const res = await fetch("http://localhost:3000/api", {
-  //     method: "GET",
-  //   });
-
-  //   console.log(res.json(), "res");
-  // };
-  // useEffect(() => {
-  //   fetchHandler();
-  // }, []);
 
   return (
     <>
